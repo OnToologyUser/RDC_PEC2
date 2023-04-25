@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/"
-     xml:base="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/"
+<rdf:RDF xmlns="https://w3id.org/def/World_Wine"
+     xml:base="https://w3id.org/def/World_Wine"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -10,7 +10,7 @@
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:World_Wine="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine">
+    <owl:Ontology rdf:about="https://w3id.org/def/World_Wine">
         <rdfs:comment>@Author:
 Miguel Elías Villanúa</rdfs:comment>
         <rdfs:label>World_Wine Ontology</rdfs:label>
