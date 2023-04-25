@@ -13,7 +13,7 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine">
         <rdfs:comment>@Author:
 Miguel Elías Villanúa</rdfs:comment>
-        <rdfs:label>Wolrd_Wine Ontology</rdfs:label>
+        <rdfs:label>World_Wine Ontology</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
     
