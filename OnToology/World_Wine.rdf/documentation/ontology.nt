@@ -1,7 +1,5 @@
-<http://www.semanticweb.org/dvc/ontologies/2023/2/World_Wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://www.semanticweb.org/dvc/ontologies/2023/2/World_Wine> <http://www.w3.org/2000/01/rdf-schema#comment> "@Author:\nMiguel Elías Villanúa" .
-<http://www.semanticweb.org/dvc/ontologies/2023/2/World_Wine> <http://www.w3.org/2000/01/rdf-schema#label> "World_Wine Ontology" .
-<http://www.semanticweb.org/dvc/ontologies/2023/2/World_Wine> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine> <http://www.w3.org/2000/01/rdf-schema#comment> "@Author:\nMiguel Elías Villanúa" .
 # 
 # 
 # #################################################################
@@ -89,6 +87,12 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger> <http://www.w3.org/2000/01/rdf-schema#comment> "Object property \"is_younger\"" .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger> <http://www.w3.org/2000/01/rdf-schema#label> "is_younger" .
+# 
+# http://www.w3.org/2002/07/owl#topObjectProperty
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.w3.org/2002/07/owl#topObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ReflexiveProperty> .
 # 
 # 
 # 
@@ -505,42 +509,90 @@ _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> "13.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> "4.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> "6.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> "15.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> "4.4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> "14.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> "4.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> "14.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> "5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> "13"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> "4.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> .
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> "14.3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> "4.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .

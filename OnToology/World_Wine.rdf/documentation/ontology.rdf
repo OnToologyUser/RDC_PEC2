@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/dvc/ontologies/2023/2/World_Wine#"
-     xml:base="http://www.semanticweb.org/dvc/ontologies/2023/2/World_Wine"
+<rdf:RDF xmlns="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#"
+     xml:base="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -10,11 +10,9 @@
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:World_Wine="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/dvc/ontologies/2023/2/World_Wine">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine">
         <rdfs:comment>@Author:
 Miguel Elías Villanúa</rdfs:comment>
-        <rdfs:label>World_Wine Ontology</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -152,6 +150,17 @@ Miguel Elías Villanúa</rdfs:comment>
         <rdfs:range rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"/>
         <rdfs:comment>Object property &quot;is_younger&quot;</rdfs:comment>
         <rdfs:label>is_younger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
     </owl:ObjectProperty>
     
 
@@ -823,10 +832,18 @@ Miguel Elías Villanúa</rdfs:comment>
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine"/>
-        <World_Wine:has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</World_Wine:has_age>
-        <World_Wine:has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.5</World_Wine:has_alcohol_percentage>
-        <World_Wine:has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</World_Wine:has_rating>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"/>
+        <has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</has_age>
+        <has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.5</has_alcohol_percentage>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</has_rating>
     </owl:NamedIndividual>
     
 
@@ -835,10 +852,18 @@ Miguel Elías Villanúa</rdfs:comment>
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine"/>
-        <World_Wine:has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</World_Wine:has_age>
-        <World_Wine:has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</World_Wine:has_alcohol_percentage>
-        <World_Wine:has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</World_Wine:has_rating>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"/>
+        <has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</has_age>
+        <has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</has_alcohol_percentage>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</has_rating>
     </owl:NamedIndividual>
     
 
@@ -847,10 +872,18 @@ Miguel Elías Villanúa</rdfs:comment>
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine"/>
-        <World_Wine:has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</World_Wine:has_age>
-        <World_Wine:has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.5</World_Wine:has_alcohol_percentage>
-        <World_Wine:has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</World_Wine:has_rating>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"/>
+        <has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</has_age>
+        <has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.5</has_alcohol_percentage>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</has_rating>
     </owl:NamedIndividual>
     
 
@@ -859,10 +892,18 @@ Miguel Elías Villanúa</rdfs:comment>
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine"/>
-        <World_Wine:has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</World_Wine:has_age>
-        <World_Wine:has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.5</World_Wine:has_alcohol_percentage>
-        <World_Wine:has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</World_Wine:has_rating>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"/>
+        <has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</has_age>
+        <has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.5</has_alcohol_percentage>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</has_rating>
     </owl:NamedIndividual>
     
 
@@ -871,10 +912,18 @@ Miguel Elías Villanúa</rdfs:comment>
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine"/>
-        <World_Wine:has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</World_Wine:has_age>
-        <World_Wine:has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13</World_Wine:has_alcohol_percentage>
-        <World_Wine:has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</World_Wine:has_rating>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"/>
+        <has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</has_age>
+        <has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13</has_alcohol_percentage>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</has_rating>
     </owl:NamedIndividual>
     
 
@@ -883,10 +932,18 @@ Miguel Elías Villanúa</rdfs:comment>
 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine"/>
-        <World_Wine:has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</World_Wine:has_age>
-        <World_Wine:has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.3</World_Wine:has_alcohol_percentage>
-        <World_Wine:has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</World_Wine:has_rating>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"/>
+        <has_age rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</has_age>
+        <has_alcohol_percentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.3</has_alcohol_percentage>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</has_rating>
     </owl:NamedIndividual>
     
 

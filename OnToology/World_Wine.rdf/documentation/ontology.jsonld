@@ -993,17 +993,10 @@
   "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dvc/ontologies/2023/2/World_Wine",
+  "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "@Author:\nMiguel Elías Villanúa"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "World_Wine Ontology"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "@value" : "1.0"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity",
@@ -1168,7 +1161,23 @@
     "@value" : "4.5"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"
+  }, {
     "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz",
@@ -1186,7 +1195,23 @@
     "@value" : "4.4"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"
+  }, {
     "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas",
@@ -1204,7 +1229,23 @@
     "@value" : "4.3"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"
+  }, {
     "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic",
@@ -1285,7 +1326,23 @@
     "@value" : "5"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"
+  }, {
     "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine",
@@ -1339,7 +1396,23 @@
     "@value" : "4.2"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"
+  }, {
     "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca",
@@ -1357,7 +1430,23 @@
     "@value" : "4.6"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Basic_Information"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating"
+  }, {
     "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant"
+  }, {
+    "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Wine_Properties"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Name",
@@ -1808,6 +1897,9 @@
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid1"
   } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty", "http://www.w3.org/2002/07/owl#ReflexiveProperty" ]
 }, {
   "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]

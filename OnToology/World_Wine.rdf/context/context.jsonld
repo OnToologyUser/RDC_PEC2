@@ -15,9 +15,6 @@
     "Sparkling_Wine" : {
       "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine"
     },
-    "versionInfo" : {
-      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
-    },
     "has_sugar_grams" : {
       "@id" : "http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams"
     },
