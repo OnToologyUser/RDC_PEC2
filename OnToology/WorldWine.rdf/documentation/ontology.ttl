@@ -1,0 +1,1290 @@
+@prefix : <http://www.semanticweb.org/miguel/ontologies/2023/3/WorldWine#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/miguel/ontologies/2023/3/WorldWine#> .
+
+<http://www.semanticweb.org/miguel/ontologies/2023/3/WorldWine> rdf:type owl:Ontology ;
+                                                                 rdfs:comment "@Author: Miguel Elías Villanúa" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#float
+xsd:float owl:equivalentClass [ rdf:type rdfs:Datatype ;
+                                owl:onDatatype xsd:float ;
+                                owl:withRestrictions ( [ xsd:minInclusive "0.0%f"^^xsd:float
+                                                       ]
+                                                       [ xsd:maxInclusive "100.0%f"^^xsd:float
+                                                       ]
+                                                     )
+                              ] .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_low_rating
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_low_rating> rdf:type owl:ObjectProperty ;
+                                                                            owl:inverseOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_high_rating> ;
+                                                                            rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ;
+                                                                            rdfs:range <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ;
+                                                                            rdfs:comment "Object Property \"has_low_rating\"" ;
+                                                                            rdfs:label "has_low_rating" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_high_rating
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_high_rating> rdf:type owl:ObjectProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ;
+                                                                                 rdfs:range <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ;
+                                                                                 rdfs:comment "Object property \"has_high_rating\"" ;
+                                                                                 rdfs:label "has_high_rating" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_higher_alcohol_content
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_higher_alcohol_content> rdf:type owl:ObjectProperty ;
+                                                                                            owl:inverseOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_lower_alcohol_content> ;
+                                                                                            rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                                                            rdfs:range <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                                                            rdfs:comment "Object property \"has_higher_alcohol_content\"" ;
+                                                                                            rdfs:label "has_higher_alcohol_content" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_lower_alcohol_content
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_lower_alcohol_content> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                                                           rdfs:range <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                                                           rdfs:comment "Object property \"has_lower_alcohol_content\"" ;
+                                                                                           rdfs:label "has_lower_alcohol_content" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_older
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_older> rdf:type owl:ObjectProperty ;
+                                                                          owl:inverseOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger> ;
+                                                                          rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                                          rdfs:range <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                                          rdfs:comment "Object property \"is_older\"" ;
+                                                                          rdfs:label "is_older" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                                            rdfs:range <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                                            rdfs:comment "Object property \"is_younger\"" ;
+                                                                            rdfs:label "is_younger" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_acidity
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_acidity> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity> ;
+                                                                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                      owl:onDatatype xsd:decimal ;
+                                                                                      owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                             ]
+                                                                                                             [ xsd:maxInclusive 5.0
+                                                                                                             ]
+                                                                                                           )
+                                                                                    ] ;
+                                                                         rdfs:comment "Data property \"has_acidity\"" ;
+                                                                         rdfs:label "has_acidity" .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_body
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_body> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Body> ;
+                                                                      rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                   owl:onDatatype xsd:decimal ;
+                                                                                   owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                          ]
+                                                                                                          [ xsd:maxInclusive 5.0
+                                                                                                          ]
+                                                                                                        )
+                                                                                 ] ;
+                                                                      rdfs:comment "Data property \"has_body\"" ;
+                                                                      rdfs:label "has_body" .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Description> ;
+                                                                             rdfs:range xsd:string ;
+                                                                             rdfs:comment "Data property \"has_description\"" ;
+                                                                             rdfs:label "has_description" .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Name> ;
+                                                                      rdfs:range xsd:string ;
+                                                                      rdfs:comment "Data property \"has_name\"" ;
+                                                                      rdfs:label "has_name" .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Num_Reviews> ;
+                                                                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                      owl:onDatatype xsd:decimal ;
+                                                                                      owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                             ]
+                                                                                                           )
+                                                                                    ] ;
+                                                                         rdfs:comment "Data property \"has_reviews\"" ;
+                                                                         rdfs:label "has_reviews" .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery> ;
+                                                                        rdfs:range xsd:string ;
+                                                                        rdfs:comment "Data property \"has_winery\"" ;
+                                                                        rdfs:label "has_winery" .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year> ;
+                                                                      rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                   owl:onDatatype xsd:integer ;
+                                                                                   owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                                          ]
+                                                                                                        )
+                                                                                 ] ;
+                                                                      rdfs:comment "Data property \"has_year\"" ;
+                                                                      rdfs:label "has_year" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> rdf:type owl:DatatypeProperty ,
+                                                                                  owl:FunctionalProperty ;
+                                                                         rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                      owl:onDatatype xsd:decimal ;
+                                                                                      owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                             ]
+                                                                                                           )
+                                                                                    ] ;
+                                                                         rdfs:comment "Data property \"has_age\"" ;
+                                                                         rdfs:label "has_age" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> rdf:type owl:DatatypeProperty ,
+                                                                                                 owl:FunctionalProperty ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                                                        rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                                     owl:onDatatype xsd:decimal ;
+                                                                                                     owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                                            ]
+                                                                                                                            [ xsd:maxInclusive 100.0
+                                                                                                                            ]
+                                                                                                                          )
+                                                                                                   ] ;
+                                                                                        rdfs:comment "Data property \"has_alcohol_percentage\"" ;
+                                                                                        rdfs:label "has_alcohol_percentage" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price> ;
+                                                                           rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                        owl:onDatatype xsd:decimal ;
+                                                                                        owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                                               ]
+                                                                                                             )
+                                                                                      ] ;
+                                                                           rdfs:comment "Data property \"has_price\"" ;
+                                                                           rdfs:label "has_price" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ;
+                                                                            rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                         owl:onDatatype xsd:decimal ;
+                                                                                         owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                                ]
+                                                                                                                [ xsd:maxInclusive 5.0
+                                                                                                                ]
+                                                                                                              )
+                                                                                       ] ;
+                                                                            rdfs:comment "Data property \"has_rating\"" ;
+                                                                            rdfs:label "has_rating" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams> rdf:type owl:DatatypeProperty ,
+                                                                                          owl:FunctionalProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> ;
+                                                                                 rdfs:range [ rdf:type rdfs:Datatype ;
+                                                                                              owl:onDatatype xsd:decimal ;
+                                                                                              owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                                     ]
+                                                                                                                   )
+                                                                                            ] ;
+                                                                                 rdfs:comment "Data property \"has_sugar_grams\"" ;
+                                                                                 rdfs:label "has_sugar_grams" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Description
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Description> rdf:type owl:Class ;
+                                                                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description> ;
+                                                                                               owl:someValuesFrom xsd:string
+                                                                                             ] ;
+                                                                         rdfs:comment "Class \"Description\"" ;
+                                                                         rdfs:label "Description" .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Name
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Name> rdf:type owl:Class ;
+                                                                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name> ;
+                                                                                        owl:someValuesFrom xsd:string
+                                                                                      ] ;
+                                                                  rdfs:comment "Class \"Name\"" ;
+                                                                  rdfs:label "Name" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity> rdf:type owl:Class ;
+                                                                         owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_acidity> ;
+                                                                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                    owl:onDatatype xsd:decimal ;
+                                                                                                                    owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                                                           ]
+                                                                                                                                           [ xsd:maxInclusive 5.0
+                                                                                                                                           ]
+                                                                                                                                         )
+                                                                                                                  ]
+                                                                                             ] ;
+                                                                         rdfs:comment "Class \"Acidity\"" ;
+                                                                         rdfs:label "Acidity" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> rdf:type owl:Class ;
+                                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> ;
+                                                                                           owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                owl:onDatatype xsd:decimal ;
+                                                                                                                owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                              ]
+                                                                                         ] ;
+                                                                     rdfs:comment "Class \"Age\"" ;
+                                                                     rdfs:label "Age" ;
+                                                                     rdfs:sameAs "https://dbpedia.org/ontology/age" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> rdf:type owl:Class ;
+                                                                                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                       owl:onProperty <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> ;
+                                                                                                       owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                            owl:onDatatype xsd:decimal ;
+                                                                                                                            owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                                                                   ]
+                                                                                                                                                   [ xsd:maxInclusive 100.0
+                                                                                                                                                   ]
+                                                                                                                                                 )
+                                                                                                                          ]
+                                                                                                     ] ;
+                                                                                 rdfs:comment "Class \"Alcohol_Content\"" ;
+                                                                                 rdfs:label "Alcohol_Content" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Body
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Body> rdf:type owl:Class ;
+                                                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_body> ;
+                                                                                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                 owl:onDatatype xsd:decimal ;
+                                                                                                                 owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                                                        ]
+                                                                                                                                        [ xsd:maxInclusive 5.0
+                                                                                                                                        ]
+                                                                                                                                      )
+                                                                                                               ]
+                                                                                          ] ;
+                                                                      rdfs:comment "Class \"Body\"" ;
+                                                                      rdfs:label "Body" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> ;
+                                                                          owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry> ,
+                                                                                           <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry> ,
+                                                                                           <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet> ,
+                                                                                           <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet> ;
+                                                                          rdfs:comment "Class \"Bone_Dry\"" ;
+                                                                          rdfs:label "Bone_Dry" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country> rdf:type owl:Class ;
+                                                                         rdfs:comment "Class \"Country\"" ;
+                                                                         rdfs:label "Country" ;
+                                                                         rdfs:sameAs "https://dbpedia.org/ontology/country" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                                         owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> ,
+                                                                                          <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> ,
+                                                                                          <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva> ;
+                                                                         rdfs:comment "Class \"Crianza\"" ;
+                                                                         rdfs:label "Crianza" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ;
+                                                                              owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> ;
+                                                                              rdfs:comment "Class \"Dessert_Wine\"" ;
+                                                                              rdfs:label "Dessert_Wine" ;
+                                                                              rdfs:sameAs "https://dbpedia.org/page/Dessert_wine" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> ;
+                                                                     owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry> ,
+                                                                                      <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet> ,
+                                                                                      <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet> ;
+                                                                     rdfs:comment "Class \"Dry\"" ;
+                                                                     rdfs:label "Dry" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                                         owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> ,
+                                                                                          <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva> ;
+                                                                         rdfs:comment "Class \"Generic\"" ;
+                                                                         rdfs:label "Generic" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                                              owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva> ;
+                                                                              rdfs:comment "Class \"Gran_Reserva\"" ;
+                                                                              rdfs:label "Gran_Reserva" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Grape
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Grape> rdf:type owl:Class ;
+                                                                       rdfs:comment "Class \"Grape\"" ;
+                                                                       rdfs:label "Grape" ;
+                                                                       rdfs:sameAs "https://dbpedia.org/ontology/Grape" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                                                   owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> ,
+                                                                                                    <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> ,
+                                                                                                    <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> ,
+                                                                                                    <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> ;
+                                                                                   rdfs:comment "Class \"High_Alcohol_Wine\"" ;
+                                                                                   rdfs:label "High_Alcohol_Wine" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                                                  owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> ,
+                                                                                                   <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> ,
+                                                                                                   <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> ;
+                                                                                  rdfs:comment "Class \"Low_Alcohol_Wine\"" ;
+                                                                                  rdfs:label "Low_Alcohol_Wine" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                                                          owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> ,
+                                                                                                           <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> ;
+                                                                                          rdfs:comment "Class \"Medium-High_Alcohol_Wine\"" ;
+                                                                                          rdfs:label "Medium-High_Alcohol_Wine" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                                                         owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> ;
+                                                                                         rdfs:comment "Class \"Medium-Low_Alcohol_Wine\"" ;
+                                                                                         rdfs:label "Medium-Low_Alcohol_Wine" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                                                     rdfs:comment "Class \"Medium_Alcohol_Wine\"" ;
+                                                                                     rdfs:label "Class Medium_Alcohol_Wine" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Num_Reviews
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Num_Reviews> rdf:type owl:Class ;
+                                                                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews> ;
+                                                                                                   owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                        owl:onDatatype xsd:decimal ;
+                                                                                                                        owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                                                               ]
+                                                                                                                                             )
+                                                                                                                      ]
+                                                                                                 ] ;
+                                                                             rdfs:comment "Class \"Num_Reviews\"" ;
+                                                                             rdfs:label "Num_Reviews" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> ;
+                                                                         owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet> ,
+                                                                                          <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet> ;
+                                                                         rdfs:comment "Class \"Off-Dry\"" ;
+                                                                         rdfs:label "Off-Dry" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price> rdf:type owl:Class ;
+                                                                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price> ;
+                                                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                  owl:onDatatype xsd:decimal ;
+                                                                                                                  owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                                                         ]
+                                                                                                                                       )
+                                                                                                                ]
+                                                                                           ] ;
+                                                                       rdfs:comment "Class \"Price\"" ;
+                                                                       rdfs:label "Price" ;
+                                                                       rdfs:sameAs "https://dbpedia.org/ontology/price" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> rdf:type owl:Class ;
+                                                                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> ;
+                                                                                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                   owl:onDatatype xsd:decimal ;
+                                                                                                                   owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                                                          ]
+                                                                                                                                          [ xsd:maxInclusive 5.0
+                                                                                                                                          ]
+                                                                                                                                        )
+                                                                                                                 ]
+                                                                                            ] ;
+                                                                        rdfs:comment "Class \"Rating\"" ;
+                                                                        rdfs:label "Rating" ;
+                                                                        rdfs:sameAs "https://dbpedia.org/ontology/rating" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ;
+                                                                          owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> ,
+                                                                                           <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> ,
+                                                                                           <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> ,
+                                                                                           <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> ;
+                                                                          rdfs:comment "Class \"Red_Wine\"" ;
+                                                                          rdfs:label "Red_Wine" ;
+                                                                          rdfs:sameAs "https://dbpedia.org/page/Red_wine" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Region
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Region> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country> ;
+                                                                        rdfs:comment "Class \"Region\"" ;
+                                                                        rdfs:label "Region" ;
+                                                                        rdfs:sameAs "https://dbpedia.org/ontology/region" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                                         rdfs:comment "Class \"Reserva\"" ;
+                                                                         rdfs:label "Reserva" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ;
+                                                                      owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> ,
+                                                                                       <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> ,
+                                                                                       <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> ;
+                                                                      rdfs:comment "Class \"Rosé\"" ;
+                                                                      rdfs:label "Rosé" ;
+                                                                      rdfs:sameAs "https://dbpedia.org/page/Ros%C3%A9" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ;
+                                                                                   owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> ,
+                                                                                                    <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> ;
+                                                                                   rdfs:comment "Class \"Skin-Contact_Wine\"" ;
+                                                                                   rdfs:label "Skin-Contact_Wine" ;
+                                                                                   rdfs:sameAs "https://dbpedia.org/page/Orange_wine" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ;
+                                                                                owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> ;
+                                                                                rdfs:comment "Class \"Sparkling_Wine\"" ;
+                                                                                rdfs:label "Sparkling_Wine" ;
+                                                                                rdfs:sameAs "https://dbpedia.org/page/Sparkling_wine" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> rdf:type owl:Class ;
+                                                                               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams> ;
+                                                                                                     owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                          owl:onDatatype xsd:decimal ;
+                                                                                                                          owl:withRestrictions ( [ xsd:minInclusive 0.0
+                                                                                                                                                 ]
+                                                                                                                                               )
+                                                                                                                        ]
+                                                                                                   ] ;
+                                                                               rdfs:comment "Class \"Sugar_Content\"" ;
+                                                                               rdfs:label "Sugar_Content" ;
+                                                                               rdfs:sameAs "https://dbpedia.org/page/Sugars_in_wine" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> ;
+                                                                       owl:disjointWith <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet> ;
+                                                                       rdfs:comment "Class \"Sweet\"" ;
+                                                                       rdfs:label "Sweet" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> rdf:type owl:Class ;
+                                                                         rdfs:comment "Class \"Variant\"" ;
+                                                                         rdfs:label "Variant" ;
+                                                                         rdfs:sameAs "https://dbpedia.org/ontology/hasVariant" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> ;
+                                                                            rdfs:comment "Class \"Very_Sweet\"" ;
+                                                                            rdfs:label "Very_Sweet" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ;
+                                                                            rdfs:comment "Class \"White_Wine\"" ;
+                                                                            rdfs:label "White_Wine" ;
+                                                                            rdfs:sameAs "https://dbpedia.org/page/White_wine" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery> rdf:type owl:Class ;
+                                                                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery> ;
+                                                                                              owl:someValuesFrom xsd:string
+                                                                                            ] ;
+                                                                        rdfs:comment "Class \"Winery\"" ;
+                                                                        rdfs:label "Winery" ;
+                                                                        rdfs:sameAs "https://dbpedia.org/page/Winery" .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year> rdf:type owl:Class ;
+                                                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year> ;
+                                                                                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                 owl:onDatatype xsd:integer ;
+                                                                                                                 owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                                                                        ]
+                                                                                                                                      )
+                                                                                                               ]
+                                                                                          ] ;
+                                                                      rdfs:comment "Class \"Year\"" ;
+                                                                      rdfs:label "Year" ;
+                                                                      rdfs:sameAs "https://dbpedia.org/ontology/year" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Acidity
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Acidity> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity> .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Alcohol_content
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Alcohol_content> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Body
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Body> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Body> .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Campo_de_Borja
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Campo_de_Borja> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country> ,
+                                                                                     <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Region> .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Castelo
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Castelo> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> ,
+                                                                              <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Mencía
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Mencía> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Grape> .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moscatel_Toneles_Viejísimo
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moscatel_Toneles_Viejísimo> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> ,
+                                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moët_Chandon_Brut_Impérial
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moët_Chandon_Brut_Impérial> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> ,
+                                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Num_review
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Num_review> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Num_Reviews> ;
+                                                                        <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews> 100 .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Price
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Price> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price> ;
+                                                                   <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price> 5 .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Rating
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Rating> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ;
+                                                                    <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> 5 .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Ribolla_de_Gravner
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Ribolla_de_Gravner> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> ,
+                                                                                         <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Sommos
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Sommos> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery> .
+
+
+###  http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Spain
+<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Spain> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country> .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> ;
+                                                                                      <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> 1.0 ;
+                                                                                      <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> 13.5 ;
+                                                                                      <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> 4.5 .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Description> ,
+                                                                                             <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Name> ,
+                                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ,
+                                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ,
+                                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> ,
+                                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> ,
+                                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ,
+                                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> ,
+                                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ,
+                                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery> ,
+                                                                                             <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year> ;
+                                                                                    <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description> "Es el vino Enate_Syrah-Shiraz" ;
+                                                                                    <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name> "Enate_Syrah-Shiraz" ;
+                                                                                    <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery> "Sommos" ;
+                                                                                    <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year> 2015 ;
+                                                                                    <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> 6.0 ;
+                                                                                    <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> 15.0 ;
+                                                                                    <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> 4.4 .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ,
+                                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ,
+                                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> ,
+                                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> ,
+                                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ,
+                                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> ,
+                                                                                                 <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ;
+                                                                                        <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> 3 ;
+                                                                                        <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> 14.5 ;
+                                                                                        <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> 4.3 .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ,
+                                                                                         <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ,
+                                                                                         <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> ,
+                                                                                         <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> ,
+                                                                                         <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ,
+                                                                                         <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> ,
+                                                                                         <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ;
+                                                                                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> 5 ;
+                                                                                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> 14.5 ;
+                                                                                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> 5 .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ,
+                                                                                               <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> ;
+                                                                                      <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> 2 ;
+                                                                                      <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> 13 ;
+                                                                                      <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> 4.2 .
+
+
+###  http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ,
+                                                                                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ,
+                                                                                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> ,
+                                                                                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> ,
+                                                                                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> ,
+                                                                                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> ,
+                                                                                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> ;
+                                                                       <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> 3 ;
+                                                                       <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> 14.3 ;
+                                                                       <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> 4.6 .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine>
+                <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine>
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/miguel/ontologies/2023/3/X> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/miguel/ontologies/2023/3/A> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Crianza" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/X>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/X> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/miguel/ontologies/2023/3/A>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/A> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 2 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/A> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 4 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/X>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Generic" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 2 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Reserva" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 4 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 5 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Gran_Reserva" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Medium_Alcohol_Wine" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 11.5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 13.5 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Medium-High_Alcohol_Wine" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 13.5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 15 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Medium-Low_Alcohol_Wine" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 10 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 11.5 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "Low_Alcohol_Wine" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 10 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "High_Alcohol_Wine" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 15 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
