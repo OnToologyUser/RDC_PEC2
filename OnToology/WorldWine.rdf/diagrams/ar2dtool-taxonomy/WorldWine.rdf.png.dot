@@ -1,0 +1,27 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "World_Wine:Medium_Alcohol_Wine" "World_Wine:Medium-High_Alcohol_Wine" "World_Wine:Low_Alcohol_Wine" "World_Wine:Generic" "World_Wine:Medium-Low_Alcohol_Wine" "World_Wine:High_Alcohol_Wine" "World_Wine:Very_sweet" "World_Wine:Region" "World_Wine:Sweet" "World_Wine:White_Wine" "World_Wine:Country" "World_Wine:Skin-contact_Wine" "World_Wine:Sugar_content" "World_Wine:Bone_Dry" "World_Wine:Rosé" "World_Wine:Gran_Reserva" "World_Wine:Off-Dry" "World_Wine:Dry" "World_Wine:Dessert_Wine" "World_Wine:Crianza" "World_Wine:Variant" "World_Wine:Reserva" "World_Wine:Alcohol_content" "World_Wine:Age" "World_Wine:Red_Wine" "World_Wine:Sparkling_Wine" ; /*classes style*/
+	"World_Wine:Medium-High_Alcohol_Wine" -> "World_Wine:Alcohol_content" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Low_Alcohol_Wine" -> "World_Wine:Alcohol_content" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Gran_Reserva" -> "World_Wine:Age" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Rosé" -> "World_Wine:Variant" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Skin-contact_Wine" -> "World_Wine:Variant" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Dry" -> "World_Wine:Sugar_content" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Bone_Dry" -> "World_Wine:Sugar_content" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Medium-Low_Alcohol_Wine" -> "World_Wine:Alcohol_content" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Sparkling_Wine" -> "World_Wine:Variant" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Red_Wine" -> "World_Wine:Variant" [ label = "rdfs:subClassOf" ];
+	"World_Wine:White_Wine" -> "World_Wine:Variant" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Sweet" -> "World_Wine:Sugar_content" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Generic" -> "World_Wine:Age" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Off-Dry" -> "World_Wine:Sugar_content" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Very_sweet" -> "World_Wine:Sugar_content" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Region" -> "World_Wine:Country" [ label = "rdfs:subClassOf" ];
+	"World_Wine:High_Alcohol_Wine" -> "World_Wine:Alcohol_content" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Dessert_Wine" -> "World_Wine:Variant" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Crianza" -> "World_Wine:Age" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Reserva" -> "World_Wine:Age" [ label = "rdfs:subClassOf" ];
+	"World_Wine:Medium_Alcohol_Wine" -> "World_Wine:Alcohol_content" [ label = "rdfs:subClassOf" ];
+
+}
