@@ -13,6 +13,7 @@
      xmlns:World_Wine="http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/miguel/ontologies/2023/3/WorldWine">
         <rdfs:comment>@Author: Miguel Elías Villanúa</rdfs:comment>
+        <owl:versionInfo>v1.0</owl:versionInfo>
     </owl:Ontology>
     
 

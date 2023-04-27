@@ -1,0 +1,684 @@
+Prefix(:=<http://www.semanticweb.org/miguel/ontologies/2023/3/WorldWine#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/miguel/ontologies/2023/3/WorldWine>
+Annotation(rdfs:comment "@Author: Miguel Elías Villanúa")
+Annotation(owl:versionInfo "v1.0")
+
+Declaration(Class(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Description>))
+Declaration(Class(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Name>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Body>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Grape>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Num_Reviews>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Region>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery>))
+Declaration(Class(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_low_rating>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_high_rating>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_higher_alcohol_content>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_lower_alcohol_content>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_older>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger>))
+Declaration(DataProperty(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_acidity>))
+Declaration(DataProperty(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_body>))
+Declaration(DataProperty(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description>))
+Declaration(DataProperty(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name>))
+Declaration(DataProperty(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews>))
+Declaration(DataProperty(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery>))
+Declaration(DataProperty(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year>))
+Declaration(DataProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age>))
+Declaration(DataProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage>))
+Declaration(DataProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price>))
+Declaration(DataProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating>))
+Declaration(DataProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Acidity>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Alcohol_content>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Body>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Campo_de_Borja>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Castelo>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Mencía>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moscatel_Toneles_Viejísimo>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moët_Chandon_Brut_Impérial>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Num_review>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Price>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Rating>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Ribolla_de_Gravner>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Sommos>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Spain>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca>))
+Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>))
+Declaration(AnnotationProperty(rdfs:sameAs))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_low_rating> (has_low_rating)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_low_rating> "Object Property \"has_low_rating\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_low_rating> "has_low_rating")
+InverseObjectProperties(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_low_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_high_rating>)
+ObjectPropertyDomain(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_low_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating>)
+ObjectPropertyRange(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_low_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating>)
+
+# Object Property: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_high_rating> (has_high_rating)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_high_rating> "Object property \"has_high_rating\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_high_rating> "has_high_rating")
+ObjectPropertyDomain(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_high_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating>)
+ObjectPropertyRange(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_high_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating>)
+
+# Object Property: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_higher_alcohol_content> (has_higher_alcohol_content)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_higher_alcohol_content> "Object property \"has_higher_alcohol_content\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_higher_alcohol_content> "has_higher_alcohol_content")
+InverseObjectProperties(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_higher_alcohol_content> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_lower_alcohol_content>)
+ObjectPropertyDomain(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_higher_alcohol_content> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content>)
+ObjectPropertyRange(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_higher_alcohol_content> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content>)
+
+# Object Property: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_lower_alcohol_content> (has_lower_alcohol_content)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_lower_alcohol_content> "Object property \"has_lower_alcohol_content\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_lower_alcohol_content> "has_lower_alcohol_content")
+ObjectPropertyDomain(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_lower_alcohol_content> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content>)
+ObjectPropertyRange(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_lower_alcohol_content> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content>)
+
+# Object Property: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_older> (is_older)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_older> "Object property \"is_older\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_older> "is_older")
+InverseObjectProperties(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_older> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger>)
+ObjectPropertyDomain(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_older> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age>)
+ObjectPropertyRange(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_older> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age>)
+
+# Object Property: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger> (is_younger)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger> "Object property \"is_younger\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger> "is_younger")
+ObjectPropertyDomain(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age>)
+ObjectPropertyRange(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#is_younger> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_acidity> (has_acidity)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_acidity> "Data property \"has_acidity\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_acidity> "has_acidity")
+DataPropertyDomain(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_acidity> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity>)
+DataPropertyRange(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_acidity> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal xsd:maxInclusive "5.0"^^xsd:decimal))
+
+# Data Property: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_body> (has_body)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_body> "Data property \"has_body\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_body> "has_body")
+DataPropertyDomain(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_body> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Body>)
+DataPropertyRange(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_body> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal xsd:maxInclusive "5.0"^^xsd:decimal))
+
+# Data Property: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description> (has_description)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description> "Data property \"has_description\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description> "has_description")
+DataPropertyDomain(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Description>)
+DataPropertyRange(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name> (has_name)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name> "Data property \"has_name\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name> "has_name")
+DataPropertyDomain(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Name>)
+DataPropertyRange(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews> (has_reviews)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews> "Data property \"has_reviews\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews> "has_reviews")
+DataPropertyDomain(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Num_Reviews>)
+DataPropertyRange(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal))
+
+# Data Property: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery> (has_winery)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery> "Data property \"has_winery\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery> "has_winery")
+DataPropertyDomain(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery>)
+DataPropertyRange(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year> (has_year)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year> "Data property \"has_year\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year> "has_year")
+DataPropertyDomain(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year>)
+DataPropertyRange(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year> DatatypeRestriction(xsd:integer xsd:minInclusive "0"^^xsd:integer))
+
+# Data Property: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> (has_age)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> "Data property \"has_age\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> "has_age")
+FunctionalDataProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age>)
+DataPropertyDomain(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age>)
+DataPropertyRange(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal))
+
+# Data Property: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> (has_alcohol_percentage)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> "Data property \"has_alcohol_percentage\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> "has_alcohol_percentage")
+FunctionalDataProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage>)
+DataPropertyDomain(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content>)
+DataPropertyRange(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal xsd:maxInclusive "100.0"^^xsd:decimal))
+
+# Data Property: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price> (has_price)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price> "Data property \"has_price\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price> "has_price")
+DataPropertyDomain(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price>)
+DataPropertyRange(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price> DatatypeRestriction(xsd:decimal xsd:minInclusive "0"^^xsd:decimal))
+
+# Data Property: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> (has_rating)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> "Data property \"has_rating\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> "has_rating")
+DataPropertyDomain(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating>)
+DataPropertyRange(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal xsd:maxInclusive "5.0"^^xsd:decimal))
+
+# Data Property: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams> (has_sugar_grams)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams> "Data property \"has_sugar_grams\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams> "has_sugar_grams")
+FunctionalDataProperty(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams>)
+DataPropertyDomain(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content>)
+DataPropertyRange(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal))
+
+
+############################
+#   Datatypes
+############################
+
+# Datatype: xsd:float (xsd:float)
+
+DatatypeDefinition(xsd:float DatatypeRestriction(xsd:float xsd:minInclusive "0.0%f"^^xsd:float xsd:maxInclusive "100.0%f"^^xsd:float))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Description> (Description)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Description> "Class \"Description\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Description> "Description")
+EquivalentClasses(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Description> DataSomeValuesFrom(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description> xsd:string))
+
+# Class: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Name> (Name)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Name> "Class \"Name\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Name> "Name")
+EquivalentClasses(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Name> DataSomeValuesFrom(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name> xsd:string))
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity> (Acidity)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity> "Class \"Acidity\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity> "Acidity")
+EquivalentClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity> DataSomeValuesFrom(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_acidity> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal xsd:maxInclusive "5.0"^^xsd:decimal)))
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> (Age)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> "Class \"Age\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> "Age")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> "https://dbpedia.org/ontology/age")
+EquivalentClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> DataSomeValuesFrom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal)))
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> (Alcohol_Content)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> "Class \"Alcohol_Content\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> "Alcohol_Content")
+EquivalentClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> DataSomeValuesFrom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal xsd:maxInclusive "100.0"^^xsd:decimal)))
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Body> (Body)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Body> "Class \"Body\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Body> "Body")
+EquivalentClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Body> DataSomeValuesFrom(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_body> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal xsd:maxInclusive "5.0"^^xsd:decimal)))
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry> (Bone_Dry)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry> "Class \"Bone_Dry\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry> "Bone_Dry")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country> (Country)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country> "Class \"Country\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country> "Country")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country> "https://dbpedia.org/ontology/country")
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> (Crianza)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> "Class \"Crianza\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> "Crianza")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> (Dessert_Wine)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> "Class \"Dessert_Wine\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> "Dessert_Wine")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> "https://dbpedia.org/page/Dessert_wine")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry> (Dry)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry> "Class \"Dry\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry> "Dry")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> (Generic)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> "Class \"Generic\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> "Generic")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> (Gran_Reserva)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> "Class \"Gran_Reserva\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> "Gran_Reserva")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Grape> (Grape)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Grape> "Class \"Grape\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Grape> "Grape")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Grape> "https://dbpedia.org/ontology/Grape")
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> (High_Alcohol_Wine)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> "Class \"High_Alcohol_Wine\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> "High_Alcohol_Wine")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> (Low_Alcohol_Wine)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> "Class \"Low_Alcohol_Wine\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> "Low_Alcohol_Wine")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> (Medium-High_Alcohol_Wine)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> "Class \"Medium-High_Alcohol_Wine\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> "Medium-High_Alcohol_Wine")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> (Medium-Low_Alcohol_Wine)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> "Class \"Medium-Low_Alcohol_Wine\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> "Medium-Low_Alcohol_Wine")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> (Class Medium_Alcohol_Wine)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> "Class \"Medium_Alcohol_Wine\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> "Class Medium_Alcohol_Wine")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Num_Reviews> (Num_Reviews)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Num_Reviews> "Class \"Num_Reviews\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Num_Reviews> "Num_Reviews")
+EquivalentClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Num_Reviews> DataSomeValuesFrom(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal)))
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry> (Off-Dry)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry> "Class \"Off-Dry\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry> "Off-Dry")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price> (Price)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price> "Class \"Price\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price> "Price")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price> "https://dbpedia.org/ontology/price")
+EquivalentClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price> DataSomeValuesFrom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal)))
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> (Rating)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> "Class \"Rating\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> "Rating")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> "https://dbpedia.org/ontology/rating")
+EquivalentClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> DataSomeValuesFrom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal xsd:maxInclusive "5.0"^^xsd:decimal)))
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> (Red_Wine)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> "Class \"Red_Wine\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> "Red_Wine")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> "https://dbpedia.org/page/Red_wine")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Region> (Region)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Region> "Class \"Region\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Region> "Region")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Region> "https://dbpedia.org/ontology/region")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Region> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva> (Reserva)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva> "Class \"Reserva\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva> "Reserva")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> (Rosé)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> "Class \"Rosé\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> "Rosé")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> "https://dbpedia.org/page/Ros%C3%A9")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> (Skin-Contact_Wine)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> "Class \"Skin-Contact_Wine\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> "Skin-Contact_Wine")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> "https://dbpedia.org/page/Orange_wine")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> (Sparkling_Wine)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> "Class \"Sparkling_Wine\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> "Sparkling_Wine")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> "https://dbpedia.org/page/Sparkling_wine")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> (Sugar_Content)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> "Class \"Sugar_Content\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> "Sugar_Content")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> "https://dbpedia.org/page/Sugars_in_wine")
+EquivalentClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content> DataSomeValuesFrom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_sugar_grams> DatatypeRestriction(xsd:decimal xsd:minInclusive "0.0"^^xsd:decimal)))
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet> (Sweet)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet> "Class \"Sweet\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet> "Sweet")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> (Variant)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> "Class \"Variant\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> "Variant")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> "https://dbpedia.org/ontology/hasVariant")
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet> (Very_Sweet)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet> "Class \"Very_Sweet\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet> "Very_Sweet")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sugar_content>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> (White_Wine)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> "Class \"White_Wine\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> "White_Wine")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> "https://dbpedia.org/page/White_wine")
+SubClassOf(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant>)
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery> (Winery)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery> "Class \"Winery\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery> "Winery")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery> "https://dbpedia.org/page/Winery")
+EquivalentClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery> DataSomeValuesFrom(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery> xsd:string))
+
+# Class: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year> (Year)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year> "Class \"Year\"")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year> "Year")
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year> "https://dbpedia.org/ontology/year")
+EquivalentClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year> DataSomeValuesFrom(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year> DatatypeRestriction(xsd:integer xsd:minInclusive "0"^^xsd:integer)))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Acidity> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Acidity>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Acidity> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Acidity>)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Alcohol_content> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Alcohol_content>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Alcohol_content>)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Body> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Body>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Body> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Body>)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Campo_de_Borja> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Campo_de_Borja>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Campo_de_Borja>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Region> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Campo_de_Borja>)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Castelo> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Castelo>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Castelo>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Castelo>)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Mencía> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Mencía>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Grape> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Mencía>)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moscatel_Toneles_Viejísimo> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moscatel_Toneles_Viejísimo>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moscatel_Toneles_Viejísimo>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moscatel_Toneles_Viejísimo>)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moët_Chandon_Brut_Impérial> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moët_Chandon_Brut_Impérial>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moët_Chandon_Brut_Impérial>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Moët_Chandon_Brut_Impérial>)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Num_review> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Num_review>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Num_Reviews> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Num_review>)
+DataPropertyAssertion(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_reviews> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Num_review> "100"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Price> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Price>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Price> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Price>)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_price> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Price> "5"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Rating> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Rating>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Rating>)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Rating> "5"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Ribolla_de_Gravner> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Ribolla_de_Gravner>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Ribolla_de_Gravner>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Ribolla_de_Gravner>)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Sommos> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Sommos>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Sommos>)
+
+# Individual: <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Spain> (<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Spain>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Country> <http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Spain>)
+
+# Individual: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> (<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer>)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> "1.0"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> "13.5"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Gewürztraminer> "4.5"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> (<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+
+ClassAssertion(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Description> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+ClassAssertion(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#Name> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Winery> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Year> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz>)
+DataPropertyAssertion(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_description> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> "Es el vino Enate_Syrah-Shiraz")
+DataPropertyAssertion(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_name> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> "Enate_Syrah-Shiraz")
+DataPropertyAssertion(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_winery> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> "Sommos")
+DataPropertyAssertion(<http://www.semanticweb.org/dvc/ontologies/2023/2/WorldWine#has_year> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> "2015"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> "6.0"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> "15.0"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Enate_Syrah-Shiraz> "4.4"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> (<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas>)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> "3"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> "14.5"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Fagus_de_Coto_de_Hayas> "4.3"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> (<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso>)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> "5"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> "14.5"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Mas_de_Mancuso> "5"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> (<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo>)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> "2"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> "13"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Microcósmico_Macabeo> "4.2"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> (<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca>)
+
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca>)
+ClassAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Variant> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca>)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> "3"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> "14.3"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_rating> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Morca> "4.6"^^xsd:decimal)
+
+
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Bone_Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Off-Dry> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sweet> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Very_sweet>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Dessert_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Red_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Rosé> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Skin-contact_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Sparkling_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#White_Wine>)
+DisjointClasses(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> <http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine>)
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "Crianza") Body(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> Variable(<X>)) DataPropertyAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> Variable(<X>) Variable(<A>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> Variable(<A>) "2"^^xsd:integer) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#lessThan> Variable(<A>) "4"^^xsd:integer))Head(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Crianza> Variable(<X>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "Reserva") Body(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>)) DataPropertyAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>) Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "4"^^xsd:integer) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#lessThan> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "5"^^xsd:integer))Head(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Reserva> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "Gran_Reserva") Body(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>)) DataPropertyAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>) Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "5"^^xsd:integer))Head(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Gran_Reserva> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "Generic") Body(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Age> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>)) DataPropertyAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_age> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>) Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#lessThan> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "2"^^xsd:integer))Head(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Generic> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "Medium_Alcohol_Wine") Body(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>)) DataPropertyAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>) Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "11.5"^^xsd:decimal) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#lessThan> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "13.5"^^xsd:decimal))Head(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium_Alcohol_Wine> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "Medium-High_Alcohol_Wine") Body(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>)) DataPropertyAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>) Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "13.5"^^xsd:decimal) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#lessThan> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "15"^^xsd:integer))Head(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-High_Alcohol_Wine> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "Medium-Low_Alcohol_Wine") Body(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>)) DataPropertyAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>) Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "10"^^xsd:integer) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#lessThan> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "11.5"^^xsd:decimal))Head(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Medium-Low_Alcohol_Wine> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "High_Alcohol_Wine") Body(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>)) DataPropertyAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>) Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "15"^^xsd:integer))Head(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#High_Alcohol_Wine> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "") Annotation(rdfs:label "Low_Alcohol_Wine") Body(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Alcohol_content> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>)) DataPropertyAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#has_alcohol_percentage> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>) Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#lessThan> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/A>) "10"^^xsd:integer))Head(ClassAtom(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine#Low_Alcohol_Wine> Variable(<http://www.semanticweb.org/miguel/ontologies/2023/3/World_Wine/X>))))
+)
